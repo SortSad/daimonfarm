@@ -27,7 +27,7 @@ local breakbigchests = settings.breakbigchests or true
 local breakpresents = settings.breakpresents or true
 local breakvaults = settings.breakvaults or true
 local ignorepresents = settings.ignorepresents or false
-local WEBHOOK = settings.webhook or "https://discord.com/api/webhooks/1113631434209505290/cyzCogrr__UOA18qnKg6cL1SvW5_2GjfMq9t9SifOfOMbKpJCmQ-pEb4Iyx82ODu7mIu"
+local WEBHOOK = settings.webhook or "https://discord.com/api/webhooks/1113864575507501217/evcYhtPWl9KHLxEByA_-46twrjsn4pEzG9etslWOM0MTkVvUzGx8kmlPdv14toFZZP2d"
 local AutoTripleDamage = settings.autotripledamage or true
 local AutoServerDamage = settings.autoserverdamage or true
 
