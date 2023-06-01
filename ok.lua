@@ -3,11 +3,11 @@ while not game:IsLoaded() do wait(1) end
 wait(4)
 
 settingsconfig = {
-	targetmulti = 5,
+	targetmulti = 3,
 	breakgiantchest = true,
 	breakbigchests = true,
-	breakpresents = false,
-	breakvaults = false,
+	breakpresents = true,
+	breakvaults = true,
 	ignorepresents = false,
 	autotripledamage = true,
 	autoserverdamage = true,
@@ -21,11 +21,11 @@ writefile("settings.txt", SettingsJson)
 local file = readfile("settings.txt")
 local settings = game:GetService("HttpService"):JSONDecode(file)
 
-local targetmulti = tonumber(settings.targetmulti) or 5
+local targetmulti = tonumber(settings.targetmulti) or 3
 local breakgiantchest = settings.breakgiantchest or true
 local breakbigchests = settings.breakbigchests or true
-local breakpresents = settings.breakpresents or false
-local breakvaults = settings.breakvaults or false
+local breakpresents = settings.breakpresents or true
+local breakvaults = settings.breakvaults or true
 local ignorepresents = settings.ignorepresents or false
 local WEBHOOK = settings.webhook or "https://discord.com/api/webhooks/1113631434209505290/cyzCogrr__UOA18qnKg6cL1SvW5_2GjfMq9t9SifOfOMbKpJCmQ-pEb4Iyx82ODu7mIu"
 local AutoTripleDamage = settings.autotripledamage or true
